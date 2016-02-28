@@ -1,0 +1,23 @@
+<head>
+  <title>IE test-upload</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>IE test-upload</h1>
+
+    {{> form }}
+  </div>
+</body>
+
+<template name="form">
+  {{#autoForm schema=test_schema doc=test_doc id="test_upload_form" type="method" meteormethod="test_upload"}}
+
+  {{> afQuickField name='user_id' value=../user/_id type='hidden'}}
+
+  {{> afQuickField name='upload_id'
+    template='bootstrap3-horizontal'
+  }}
+
+  {{/autoForm}}
+</template>

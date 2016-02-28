@@ -1,6 +1,8 @@
-= Meteor autoform file upload button test =
+Test code for meteor autoform file upload fix
+=============================================
 
-== Create project ==
+Create project
+--------------
 
 ```
 meteor create test-upload
@@ -31,20 +33,24 @@ meteor add yogiben:autoform-file
 ```
 
 
-== Write code ===
+Write code
+----------
 
 Get sources from this repo or write your own
 
-Start meteor, run from project root:
+Start meteor from project root:
 
 ```
 meteor
 ```
 
-== Test upload button in IE ==
+Test upload button in IE
+------------------------
 
 Open http://localhost:3000 and click upload button - file selection dialog must appear.
 
 Select file - upload must start.
 
-You can code here: http://oa-testupload.meteor.com
+Upload process will be canceled.
+
+You can test fix here: http://oa-testupload.meteor.com
